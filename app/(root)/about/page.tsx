@@ -7,21 +7,18 @@ import Link from 'next/link'
 export default function page() {
 	return (
 		<div className='mx-auto max-w-6xl'>
-			<div className='flex min-h-[10vh] items-center justify-center '>
-				<h1 className='section-title font-createRound text-2xl md:text-3xl lg:text-4xl'>
+			<div className='relative flex min-h-[20vh] flex-col items-center justify-end'>
+				<h2 className='section-title relative flex text-center  font-workSans text-4xl'>
 					<span>About</span>
-				</h1>
-			</div>
-			<div className='flex items-center justify-center gap-1 font-workSans text-xl'>
-				<Link
-					className='flex items-center gap-2 font-bold  opacity-90 hover:underline hover:opacity-100'
-					href={'/'}
-				>
+				</h2>
+				<div className='mt-4 flex items-center gap-1'>
 					<Home className='size-4' />
-					Home
-				</Link>
-				<Dot className='size-10' />
-				<span className='text-white/70'>About</span>
+					<Link href={'/'} className='hover:underline'>
+						Home
+					</Link>
+					<Dot />
+					<span>About</span>
+				</div>
 			</div>
 			<div className='flex items-center justify-center gap-1 font-workSans text-2xl md:text-3xl lg:text-5xl'>
 				<h1 className='mt-10 text-center'>
