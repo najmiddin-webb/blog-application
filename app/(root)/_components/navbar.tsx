@@ -3,11 +3,8 @@
 import GlobalSarch from '@/app/(root)/_components/global-search'
 import Logo from '@/components/shared/logo'
 import ModeToggle from '@/components/shared/mode-toggle'
-import { Button } from '@/components/ui/button'
 import { navLinks } from '@/constants'
 import { cn } from '@/lib/utils'
-import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'
-import { SignUpButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Mobile from './mobile'
@@ -39,14 +36,6 @@ export default function Navbar() {
 						<ModeToggle />
 					</div>
 					<Mobile />
-					<SignedOut>
-						<SignUpButton mode='modal'>
-							<Button>Sign up</Button>
-						</SignUpButton>
-					</SignedOut>
-					<SignedIn>
-						<UserButton />
-					</SignedIn>
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,5 @@
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { ChildProps } from '@/types'
-import { ClerkProvider } from '@clerk/nextjs'
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
 import { Crete_Round, Work_Sans } from 'next/font/google'
@@ -25,21 +24,19 @@ const workSans = Work_Sans({
 
 export default function RootLayout({ children }: ChildProps) {
 	return (
-		<ClerkProvider>
-			<html lang='en' suppressHydrationWarning>
-				<body
-					className={`${createRound.variable} ${workSans.variable} overflow-x-hidden`}
+		<html lang='en' suppressHydrationWarning>
+			<body
+				className={`${createRound.variable} ${workSans.variable} overflow-x-hidden`}
+			>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange
 				>
-					<ThemeProvider
-						attribute='class'
-						defaultTheme='system'
-						enableSystem
-						disableTransitionOnChange
-					>
-						{children}
-					</ThemeProvider>
-				</body>
-			</html>
-		</ClerkProvider>
+					{children}
+				</ThemeProvider>
+			</body>
+		</html>
 	)
 }
