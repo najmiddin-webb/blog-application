@@ -24,7 +24,7 @@ export default function Mobile() {
 					<SheetHeader>
 						<SheetTitle>
 							<Logo />
-							<div className='border bg-secondary w-full mt-2'></div>
+							<div className='mt-2 w-full border bg-secondary'></div>
 						</SheetTitle>
 						{navLinks.map(nav => (
 							<Link

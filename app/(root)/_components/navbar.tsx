@@ -15,10 +15,10 @@ import Mobile from './mobile'
 export default function Navbar() {
 	const pathname = usePathname()
 	return (
-		<div className='border-b w-full py-2 backdrop-blur-xl z-50'>
-			<div className='flex justify-between items-center px-2'>
+		<div className='z-50 w-full border-b py-2 backdrop-blur-xl'>
+			<div className='flex items-center justify-between px-2'>
 				<Logo />
-				<div className='hidden md:flex gap-3 font-createRound'>
+				<div className='hidden gap-3 font-createRound md:flex'>
 					{navLinks.map(navLink => (
 						<Link
 							key={navLink.route}
@@ -33,8 +33,8 @@ export default function Navbar() {
 						</Link>
 					))}
 				</div>
-				<div className='flex gap-2 items-center'>
-					<div className='flex gap-3 items-center'>
+				<div className='flex items-center gap-2'>
+					<div className='flex items-center gap-3'>
 						<GlobalSarch />
 						<ModeToggle />
 					</div>

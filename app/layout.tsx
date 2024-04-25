@@ -2,6 +2,7 @@ import { ThemeProvider } from '@/components/providers/theme-provider'
 import { ChildProps } from '@/types'
 import { ClerkProvider } from '@clerk/nextjs'
 import type { Metadata } from 'next'
+// eslint-disable-next-line camelcase
 import { Crete_Round, Work_Sans } from 'next/font/google'
 import './globals.css'
 

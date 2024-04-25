@@ -11,11 +11,11 @@ export default function Footer() {
 	const [active, setActive] = useState(false)
 	return (
 		<>
-			<div className='flex py-24 flex-col justify-center items-center text-3xl md:text-4xl lg:text-6xl font-createRound'>
-				<h1 className='text-center w-3/5'>
+			<div className='flex flex-col items-center justify-center py-24 font-createRound text-3xl md:text-4xl lg:text-6xl'>
+				<h1 className='w-3/5 text-center'>
 					Get latest posts delivered right to your inbox
 				</h1>
-				<div className='flex gap-2 mt-7 items-center'>
+				<div className='mt-7 flex items-center gap-2'>
 					<Input
 						className='w-[400px]'
 						onFocus={() => setActive(true)}
@@ -33,7 +33,7 @@ export default function Footer() {
 				</div>
 			</div>
 
-			<div className='flex items-center justify-between mb-5'>
+			<div className='mb-5 flex items-center justify-between'>
 				<Logo />
 				<Link href={'https://t.me/webdeveloper707'}>
 					Created by Najmiddin Turgunpo`latov

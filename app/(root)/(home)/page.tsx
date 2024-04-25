@@ -4,15 +4,15 @@ import { blogs } from '@/constants'
 
 export default function page() {
 	return (
-		<div className='max-w-6xl mx-auto'>
-			<div className='relative min-h-[60vh] flex items-center jusitfy-center'>
-				<h1 className='text-4xl md:text-5xl lg:txt-7xl shadow-sm font-bold max-w-2xl mx-auto font-createRound w-5/5 md:w-3/5 text-center'>
+		<div className='mx-auto max-w-6xl'>
+			<div className='relative flex min-h-[60vh] items-center justify-center'>
+				<h1 className='mx-auto w-full max-w-2xl text-center font-createRound text-4xl font-bold shadow-sm md:w-3/5 md:text-5xl lg:text-7xl'>
 					Taking control of your daily life is easy when you know how!
 				</h1>
 				<BgArrow />
 			</div>
-			<div className='max-w-6xl mx-auto justify-center flex'>
-				<h2 className='text-3xl mb-5 md:text-3xl lg:text-4xl font-createRound section-title'>
+			<div className='mx-auto flex max-w-6xl justify-center'>
+				<h2 className='section-title mb-5 font-createRound text-3xl md:text-3xl lg:text-4xl'>
 					<span>Recent posts</span>
 				</h2>
 			</div>

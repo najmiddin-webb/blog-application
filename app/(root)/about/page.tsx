@@ -1,3 +1,7 @@
 export default function page() {
-	return <div>About Page</div>
+	return (
+		<div className=''>
+			<h1 className='section-title relative'>About</h1>
+		</div>
+	)
 }
